@@ -1,8 +1,6 @@
-name="Greater Greece"
+name="Drystan Birthday"
 picture="thumbnail.png"
 tags={
-	"Greek"
-	"Empire"
-	"Focus Tree"
+	"Alternate History"
 }
-path="C:/Users/seth_/Documents/Paradox Interactive/Hearts of Iron IV/mod/greater_greece"
+path="C:/Users/seth_/Documents/Professional/dev/drystan_birthday_hoi4_mod/drystan_birthday"
