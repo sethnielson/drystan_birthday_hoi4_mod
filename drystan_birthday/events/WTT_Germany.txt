@@ -248,12 +248,12 @@ country_event = {
 		#}
 		create_country_leader = {
 			name = "Emperor Drystan the Magnificent"
-			desc = "POLITICS_WILHELM_II_DESC"
-			picture = GFX_portrait_ger_wilhelm_ii
+			desc = "POLITICS_DRYSTAN_DESC"
+			picture = "Portrait_Drystan_the_Magnificent.dds"
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				anti_democrat imperial_connections
+				anti_democrat imperial_connections the_sacred_king spirit_of_genghis indomitable_perseverance great_war_hero
 			}
 		}
 		hidden_effect = { news_event = { id = wtt_news.3 hours = 6 } }
@@ -317,14 +317,24 @@ country_event = {
 		clr_country_flag = germany_war_return_kaiser
 		HOL = { clr_country_flag = netherlands_refused_return_kaiser }
 		set_country_flag = kaiser_wilhelm_ii
+		#create_country_leader = {
+		#	name = "Wilhelm II"
+		#	desc = "POLITICS_WILHELM_II_DESC"
+		#	picture = GFX_portrait_ger_wilhelm_ii
+		#	expire = "1965.1.1"
+		#	ideology = despotism
+		#	traits = {
+		#		anti_democrat imperial_connections
+		#	}
+		#}
 		create_country_leader = {
-			name = "Wilhelm II"
-			desc = "POLITICS_WILHELM_II_DESC"
-			picture = GFX_portrait_ger_wilhelm_ii
+			name = "Emperor Drystan the Magnificent"
+			desc = "POLITICS_DRYSTAN_DESC"
+			picture = "Portrait_Drystan_the_Magnificent.dds"
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				anti_democrat imperial_connections
+				anti_democrat imperial_connections the_sacred_king spirit_of_genghis indomitable_perseverance great_war_hero
 			}
 		}
 		hidden_effect = { news_event = { id = wtt_news.4 hours = 6 } }

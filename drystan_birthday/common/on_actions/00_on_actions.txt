@@ -1,0 +1,51 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = FRA
+					FROM = {
+						has_country_flag = kaiser_wilhelm_ii
+					}
+				}
+				add_country_leader_trait = count_of_paris
+			}
+			if = {
+				limit = {
+					tag = ITA
+					FROM  {
+						has_country_flag = kaiser_wilhelm_ii
+					}
+				}
+				add_country_leader_trait = empire_builder
+			}
+			if = {
+				limit = {
+					tag = SOV
+					FROM = {
+						has_country_flag = kaiser_wilhelm_ii
+					}
+				}
+				add_country_leader_trait = army_chief_drill_3
+			}
+			if = {
+				limit = {
+					tag = USA
+					FROM = {
+						has_country_flag = kaiser_wilhelm_ii
+					}
+				}
+				add_country_leader_trait = american_caesar
+			}
+			if = {
+				limit = {
+					tag = ENG
+					FROM = {
+						has_country_flag = kaiser_wilhelm_ii
+					}
+				}
+				add_country_leader_trait = british_bulldog
+			}
+		}
+	}
+}
