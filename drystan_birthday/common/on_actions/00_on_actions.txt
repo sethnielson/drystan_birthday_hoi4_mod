@@ -8,16 +8,20 @@ on_actions = {
 						has_country_flag = kaiser_wilhelm_ii
 					}
 				}
-				add_country_leader_trait = count_of_paris
+				FROM = {
+					add_country_leader_trait = count_of_paris
+				}
 			}
 			if = {
 				limit = {
 					tag = ITA
-					FROM  {
+					FROM = {
 						has_country_flag = kaiser_wilhelm_ii
 					}
 				}
-				add_country_leader_trait = empire_builder
+				FROM = {
+					add_country_leader_trait = empire_builder
+				}
 			}
 			if = {
 				limit = {
@@ -26,7 +30,9 @@ on_actions = {
 						has_country_flag = kaiser_wilhelm_ii
 					}
 				}
-				add_country_leader_trait = army_chief_drill_3
+				FROM = {
+					add_country_leader_trait = army_chief_drill_3
+				}
 			}
 			if = {
 				limit = {
@@ -35,7 +41,9 @@ on_actions = {
 						has_country_flag = kaiser_wilhelm_ii
 					}
 				}
-				add_country_leader_trait = american_caesar
+				FROM = {
+					add_country_leader_trait = american_caesar
+				}
 			}
 			if = {
 				limit = {
@@ -44,7 +52,9 @@ on_actions = {
 						has_country_flag = kaiser_wilhelm_ii
 					}
 				}
-				add_country_leader_trait = british_bulldog
+				FROM = {
+					add_country_leader_trait = british_bulldog
+				}
 			}
 		}
 	}
