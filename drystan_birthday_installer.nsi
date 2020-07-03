@@ -52,7 +52,10 @@ start_install:
   ExecWait 'powershell -Command "Invoke-WebRequest https://github.com/sethnielson/drystan_birthday_hoi4_mod/archive/master.zip -OutFile $PROFILE\Downloads\drystan_birthday_hoi4_mod.zip"'
 
 ;--- Unzip packgae  
-  ExecWait 'powershell -Command "Expand-Archive $PROFILE\Downloads\drystan_birthday_hoi4_mod.zip -DestinationPath $INSTDIR"'
+  ExecWait 'powershell -Command "Expand-Archive \"$PROFILE\Downloads\drystan_birthday_hoi4_mod.zip\" -DestinationPath \"$INSTDIR\"' $0
+  
+  IfFileExists $INSTDIR\drystan_birthday_hoi4_mod-master\drystan_birthday.mod unzip_ok unzip_failed
+unzip_ok:
 
 ;--- Renmae to get rid of master  
   Rename $INSTDIR\drystan_birthday_hoi4_mod-master $INSTDIR\drystan_birthday_hoi4_mod
@@ -115,6 +118,10 @@ read_done:
   
 complete:
   MessageBox MB_OK "Installation completed successfully"
+  goto exit
+  
+unzip_failed:
+  MessageBox MB_OK "Installation could not unzip archive."
   goto exit
 
 hoi4_not_installed:
